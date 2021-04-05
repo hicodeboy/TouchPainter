@@ -22,10 +22,10 @@
   return self;
 }
 
-- (void)setMark:(id<Mark>)mark {
-    _mark = mark;
-    
-}
+//- (void)setMark:(id<Mark>)mark {
+//    _mark = mark;
+//    
+//}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

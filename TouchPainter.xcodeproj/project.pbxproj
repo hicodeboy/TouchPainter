@@ -32,7 +32,6 @@
 		FA3ACAD5261A01E300FAA0E8 /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAD4261A01E300FAA0E8 /* ClothCanvasViewGenerator.m */; };
 		FA7AB6452618AC760097A1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6442618AC760097A1F2 /* AppDelegate.m */; };
 		FA7AB6482618AC760097A1F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6472618AC760097A1F2 /* SceneDelegate.m */; };
-		FA7AB64B2618AC760097A1F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB64A2618AC760097A1F2 /* ViewController.m */; };
 		FA7AB64E2618AC760097A1F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7AB64C2618AC760097A1F2 /* Main.storyboard */; };
 		FA7AB6502618AC790097A1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7AB64F2618AC790097A1F2 /* Assets.xcassets */; };
 		FA7AB6532618AC790097A1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7AB6512618AC790097A1F2 /* LaunchScreen.storyboard */; };
@@ -123,8 +122,6 @@
 		FA7AB6442618AC760097A1F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA7AB6462618AC760097A1F2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		FA7AB6472618AC760097A1F2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		FA7AB6492618AC760097A1F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA7AB64A2618AC760097A1F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FA7AB64D2618AC760097A1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7AB64F2618AC790097A1F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7AB6522618AC790097A1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -375,8 +372,6 @@
 				FA7AB6442618AC760097A1F2 /* AppDelegate.m */,
 				FA7AB6462618AC760097A1F2 /* SceneDelegate.h */,
 				FA7AB6472618AC760097A1F2 /* SceneDelegate.m */,
-				FA7AB6492618AC760097A1F2 /* ViewController.h */,
-				FA7AB64A2618AC760097A1F2 /* ViewController.m */,
 				FA7AB64C2618AC760097A1F2 /* Main.storyboard */,
 				FA7AB64F2618AC790097A1F2 /* Assets.xcassets */,
 				FA7AB6512618AC790097A1F2 /* LaunchScreen.storyboard */,
@@ -594,7 +589,6 @@
 				FA3ACAD5261A01E300FAA0E8 /* ClothCanvasViewGenerator.m in Sources */,
 				FA3ACA4C2619DAC700FAA0E8 /* Dot.m in Sources */,
 				FAB82BF8261AD1F600D7CA90 /* StockData.m in Sources */,
-				FA7AB64B2618AC760097A1F2 /* ViewController.m in Sources */,
 				FA3ACA522619DAEE00FAA0E8 /* PrototypeViewController.m in Sources */,
 				FA3ACAAC2619F69C00FAA0E8 /* Scribble.m in Sources */,
 				FA7AB67E2618AD290097A1F2 /* CoordinatingController.m in Sources */,

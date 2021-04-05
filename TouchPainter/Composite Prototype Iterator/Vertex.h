@@ -25,8 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 // for the Visitor pattern
 - (void) acceptMarkVisitor:(id <MarkVisitor>) visitor;
 
-// for the Prototype pattern
-- (id) copyWithZone:(NSZone *)zone;
 
 // for the Iterator pattern
 - (NSEnumerator *) enumerator;

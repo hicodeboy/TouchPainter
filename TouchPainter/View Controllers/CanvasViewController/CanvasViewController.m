@@ -74,7 +74,7 @@
     switch (sender.tag) {
         case 1:
         case 2: {
-            [self onCustomBarButtonHit:sender];
+            [self onCustomBarButtonHit:(CommandBarButton *)sender];
         }
             break;
         case 5:
@@ -126,6 +126,7 @@
                    options:NSKeyValueObservingOptionInitial |
                            NSKeyValueObservingOptionNew
                    context:nil];
+      
   }
 }
 
@@ -268,7 +269,8 @@
   {
     id <Mark> mark = [change objectForKey:NSKeyValueChangeNewKey];
 //      if (![mark isEqual:[NSNull null]]) {
-          [_canvasView setMark:[(Scribble *)object newMark]];
+      [_canvasView setMark:mark];
+//          [_canvasView setMark:[(Scribble *)object newMark]];
           [_canvasView setNeedsDisplay];
 //      }
     

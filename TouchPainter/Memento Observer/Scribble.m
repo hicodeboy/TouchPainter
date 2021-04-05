@@ -11,19 +11,18 @@
 @interface Scribble ()
 
 @property (nonatomic, strong) id <Mark> mark;
-@property (nonatomic, strong) id <Mark> parentMark;
+
 @property (nonatomic, strong) id <Mark> incrementalMark;
 @end
 
 @implementation Scribble
-
 - (id) init
 {
   if (self = [super init])
   {
     // the parent should be a composite
     // object (i.e. Stroke)
-    _parentMark = [[Stroke alloc] init];
+    _mark = [[Stroke alloc] init];
   }
   
   return self;
@@ -36,7 +35,6 @@
 {
   // manual KVO invocation
   [self willChangeValueForKey:@"mark"];
-  
   // if the flag is set to YES
   // then add this aMark to the
   // *PREVIOUS*Mark as part of an
@@ -46,12 +44,12 @@
   // parent
   if (shouldAddToPreviousMark)
   {
-    [[_parentMark lastChild] addMark:aMark];
+    [[_mark lastChild] addMark:aMark];
   }
   // otherwise attach it to the parent
   else
   {
-    [_parentMark addMark:aMark];
+    [_mark addMark:aMark];
     _incrementalMark = aMark;
   }
   
@@ -62,12 +60,12 @@
 - (void) removeMark:(id <Mark>)aMark
 {
   // do nothing if aMark is the parent
-  if (aMark == _parentMark) return;
+  if (aMark == _mark) return;
   
   // manual KVO invocation
   [self willChangeValueForKey:@"mark"];
   
-  [_parentMark removeMark:aMark];
+  [_mark removeMark:aMark];
   
   // we don't need to keep the
   // incrementalMark_ reference
@@ -98,7 +96,7 @@
       // incremental mark, then we need to
       // create a parent Stroke object to
       // hold it
-      _parentMark = [[Stroke alloc] init];
+      _mark = [[Stroke alloc] init];
       [self attachStateFromMemento:aMemento];
     }
   }
@@ -122,7 +120,7 @@
   // set it with parentMark_
   if (hasCompleteSnapshot)
   {
-    mementoMark = _parentMark;
+    mementoMark = _mark;
   }
   // but if incrementalMark_
   // is nil then we can't do anything

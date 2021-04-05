@@ -8,6 +8,10 @@
 #import "Command.h"
 #import <UIKit/UIKit.h>
 
+
+
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void (^RGBValuesProvider)(CGFloat *red, CGFloat *green, CGFloat *blue);
 typedef void (^PostColorUpdateProvider)(UIColor *color);
 
@@ -24,8 +28,6 @@ typedef void (^PostColorUpdateProvider)(UIColor *color);
                 didFinishColorUpdateWithColor:(UIColor *) color;
 
 @end
-
-NS_ASSUME_NONNULL_BEGIN
 
 @interface SetStrokeColorCommand : Command
 @property (nonatomic, weak) id <SetStrokeColorCommandDelegate> delegate;

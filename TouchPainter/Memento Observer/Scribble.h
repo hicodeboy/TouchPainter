@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Scribble : NSObject
 
+
 // methods for Mark management
 - (void) addMark:(id <Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void) removeMark:(id <Mark>)aMark;
@@ -23,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (ScribbleMemento *) scribbleMemento;
 - (ScribbleMemento *) scribbleMementoWithCompleteSnapshot:(BOOL)hasCompleteSnapshot;
 - (void) attachStateFromMemento:(ScribbleMemento *)memento;
-
-- (id <Mark>) newMark;
 
 @end
 
