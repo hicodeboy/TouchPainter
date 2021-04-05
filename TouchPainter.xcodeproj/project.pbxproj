@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3ACA292619C90800FAA0E8 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA282619C90800FAA0E8 /* Command.m */; };
+		FA3ACA322619CA4500FAA0E8 /* SaveScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA312619CA4500FAA0E8 /* SaveScribbleCommand.m */; };
+		FA3ACA3D2619DA9000FAA0E8 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA3C2619DA9000FAA0E8 /* Vertex.m */; };
+		FA3ACA462619DAB700FAA0E8 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA452619DAB700FAA0E8 /* Stroke.m */; };
+		FA3ACA4C2619DAC700FAA0E8 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA4B2619DAC700FAA0E8 /* Dot.m */; };
+		FA3ACA522619DAEE00FAA0E8 /* PrototypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA512619DAEE00FAA0E8 /* PrototypeViewController.m */; };
+		FA3ACA592619E68900FAA0E8 /* CommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA582619E68900FAA0E8 /* CommandBarButton.m */; };
+		FA3ACA652619E71800FAA0E8 /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA642619E71800FAA0E8 /* UIView+UIImage.m */; };
+		FA3ACA702619E86D00FAA0E8 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA6F2619E86D00FAA0E8 /* NSMutableArray+Stack.m */; };
+		FA3ACA762619E8AF00FAA0E8 /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA752619E8AF00FAA0E8 /* CommandSlider.m */; };
+		FA3ACA7D2619E91500FAA0E8 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA7C2619E91500FAA0E8 /* MarkEnumerator.m */; };
+		FA3ACA862619EA2800FAA0E8 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA852619EA2800FAA0E8 /* MarkRenderer.m */; };
+		FA3ACA8F2619F3CC00FAA0E8 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA8E2619F3CC00FAA0E8 /* CanvasView.m */; };
+		FA3ACA982619F45E00FAA0E8 /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA972619F45E00FAA0E8 /* ClothCanvasView.m */; };
+		FA3ACA9E2619F4A200FAA0E8 /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACA9D2619F4A200FAA0E8 /* PaperCanvasView.m */; };
+		FA3ACAA62619F4FC00FAA0E8 /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAA52619F4FC00FAA0E8 /* ScribbleMemento.m */; };
+		FA3ACAAC2619F69C00FAA0E8 /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAAB2619F69C00FAA0E8 /* Scribble.m */; };
+		FA3ACAB22619FC0600FAA0E8 /* ScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAB12619FC0600FAA0E8 /* ScribbleManager.m */; };
+		FA3ACAB92619FC6900FAA0E8 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAB82619FC6900FAA0E8 /* ScribbleThumbnailView.m */; };
+		FA3ACABF2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACABE2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.m */; };
+		FA3ACAC6261A017000FAA0E8 /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAC5261A017000FAA0E8 /* CanvasViewGenerator.m */; };
+		FA3ACACF261A01A200FAA0E8 /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACACE261A01A200FAA0E8 /* PaperCanvasViewGenerator.m */; };
+		FA3ACAD5261A01E300FAA0E8 /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3ACAD4261A01E300FAA0E8 /* ClothCanvasViewGenerator.m */; };
 		FA7AB6452618AC760097A1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6442618AC760097A1F2 /* AppDelegate.m */; };
 		FA7AB6482618AC760097A1F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6472618AC760097A1F2 /* SceneDelegate.m */; };
 		FA7AB64B2618AC760097A1F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB64A2618AC760097A1F2 /* ViewController.m */; };
@@ -16,6 +39,16 @@
 		FA7AB6562618AC7A0097A1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6552618AC7A0097A1F2 /* main.m */; };
 		FA7AB6602618AC7A0097A1F2 /* TouchPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB65F2618AC7A0097A1F2 /* TouchPainterTests.m */; };
 		FA7AB66B2618AC7A0097A1F2 /* TouchPainterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB66A2618AC7A0097A1F2 /* TouchPainterUITests.m */; };
+		FA7AB67E2618AD290097A1F2 /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB67D2618AD290097A1F2 /* CoordinatingController.m */; };
+		FA7AB6882618AEAD0097A1F2 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6872618AEAD0097A1F2 /* PaletteViewController.m */; };
+		FA7AB6912618AEBD0097A1F2 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6902618AEBD0097A1F2 /* ThumbnailViewController.m */; };
+		FA7AB6972618AECD0097A1F2 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7AB6962618AECD0097A1F2 /* CanvasViewController.m */; };
+		FAB82BF8261AD1F600D7CA90 /* StockData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82BF7261AD1F600D7CA90 /* StockData.m */; };
+		FAB82BFE261AD9CF00D7CA90 /* DeleteScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82BFD261AD9CF00D7CA90 /* DeleteScribbleCommand.m */; };
+		FAB82C04261ADA1400D7CA90 /* OpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82C03261ADA1400D7CA90 /* OpenScribbleCommand.m */; };
+		FAB82C0A261ADAA100D7CA90 /* SetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82C09261ADAA100D7CA90 /* SetStrokeSizeCommand.m */; };
+		FAB82C10261ADAF700D7CA90 /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82C0F261ADAF700D7CA90 /* SetStrokeColorCommand.m */; };
+		FAB82C20261AE89A00D7CA90 /* ScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB82C1F261AE89A00D7CA90 /* ScribbleThumbnailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +69,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA3ACA272619C90800FAA0E8 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		FA3ACA282619C90800FAA0E8 /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		FA3ACA302619CA4500FAA0E8 /* SaveScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveScribbleCommand.h; sourceTree = "<group>"; };
+		FA3ACA312619CA4500FAA0E8 /* SaveScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveScribbleCommand.m; sourceTree = "<group>"; };
+		FA3ACA382619DA5C00FAA0E8 /* MarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		FA3ACA3A2619DA7600FAA0E8 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		FA3ACA3B2619DA9000FAA0E8 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		FA3ACA3C2619DA9000FAA0E8 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		FA3ACA442619DAB700FAA0E8 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		FA3ACA452619DAB700FAA0E8 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		FA3ACA4A2619DAC700FAA0E8 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		FA3ACA4B2619DAC700FAA0E8 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		FA3ACA502619DAEE00FAA0E8 /* PrototypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeViewController.h; sourceTree = "<group>"; };
+		FA3ACA512619DAEE00FAA0E8 /* PrototypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeViewController.m; sourceTree = "<group>"; };
+		FA3ACA572619E68900FAA0E8 /* CommandBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandBarButton.h; sourceTree = "<group>"; };
+		FA3ACA582619E68900FAA0E8 /* CommandBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandBarButton.m; sourceTree = "<group>"; };
+		FA3ACA632619E71800FAA0E8 /* UIView+UIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIImage.h"; sourceTree = "<group>"; };
+		FA3ACA642619E71800FAA0E8 /* UIView+UIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIImage.m"; sourceTree = "<group>"; };
+		FA3ACA6E2619E86D00FAA0E8 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		FA3ACA6F2619E86D00FAA0E8 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		FA3ACA742619E8AF00FAA0E8 /* CommandSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
+		FA3ACA752619E8AF00FAA0E8 /* CommandSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		FA3ACA7B2619E91500FAA0E8 /* MarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		FA3ACA7C2619E91500FAA0E8 /* MarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		FA3ACA842619EA2800FAA0E8 /* MarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		FA3ACA852619EA2800FAA0E8 /* MarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
+		FA3ACA8D2619F3CC00FAA0E8 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		FA3ACA8E2619F3CC00FAA0E8 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		FA3ACA962619F45E00FAA0E8 /* ClothCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasView.h; sourceTree = "<group>"; };
+		FA3ACA972619F45E00FAA0E8 /* ClothCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasView.m; sourceTree = "<group>"; };
+		FA3ACA9C2619F4A200FAA0E8 /* PaperCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
+		FA3ACA9D2619F4A200FAA0E8 /* PaperCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasView.m; sourceTree = "<group>"; };
+		FA3ACAA42619F4FC00FAA0E8 /* ScribbleMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		FA3ACAA52619F4FC00FAA0E8 /* ScribbleMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		FA3ACAAA2619F69C00FAA0E8 /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		FA3ACAAB2619F69C00FAA0E8 /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		FA3ACAB02619FC0600FAA0E8 /* ScribbleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleManager.h; sourceTree = "<group>"; };
+		FA3ACAB12619FC0600FAA0E8 /* ScribbleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleManager.m; sourceTree = "<group>"; };
+		FA3ACAB62619FC4C00FAA0E8 /* ScribbleSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleSource.h; sourceTree = "<group>"; };
+		FA3ACAB72619FC6900FAA0E8 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		FA3ACAB82619FC6900FAA0E8 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		FA3ACABD2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		FA3ACABE2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		FA3ACAC4261A017000FAA0E8 /* CanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewGenerator.h; sourceTree = "<group>"; };
+		FA3ACAC5261A017000FAA0E8 /* CanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
+		FA3ACACD261A01A200FAA0E8 /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		FA3ACACE261A01A200FAA0E8 /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		FA3ACAD3261A01E300FAA0E8 /* ClothCanvasViewGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		FA3ACAD4261A01E300FAA0E8 /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		FA7AB6402618AC760097A1F2 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7AB6432618AC760097A1F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA7AB6442618AC760097A1F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +136,26 @@
 		FA7AB6662618AC7A0097A1F2 /* TouchPainterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchPainterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7AB66A2618AC7A0097A1F2 /* TouchPainterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPainterUITests.m; sourceTree = "<group>"; };
 		FA7AB66C2618AC7A0097A1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7AB67C2618AD290097A1F2 /* CoordinatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
+		FA7AB67D2618AD290097A1F2 /* CoordinatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
+		FA7AB6862618AEAD0097A1F2 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		FA7AB6872618AEAD0097A1F2 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		FA7AB68F2618AEBD0097A1F2 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		FA7AB6902618AEBD0097A1F2 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
+		FA7AB6952618AECD0097A1F2 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		FA7AB6962618AECD0097A1F2 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		FAB82BF6261AD1F600D7CA90 /* StockData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockData.h; sourceTree = "<group>"; };
+		FAB82BF7261AD1F600D7CA90 /* StockData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockData.m; sourceTree = "<group>"; };
+		FAB82BFC261AD9CF00D7CA90 /* DeleteScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteScribbleCommand.h; sourceTree = "<group>"; };
+		FAB82BFD261AD9CF00D7CA90 /* DeleteScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteScribbleCommand.m; sourceTree = "<group>"; };
+		FAB82C02261ADA1400D7CA90 /* OpenScribbleCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenScribbleCommand.h; sourceTree = "<group>"; };
+		FAB82C03261ADA1400D7CA90 /* OpenScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenScribbleCommand.m; sourceTree = "<group>"; };
+		FAB82C08261ADAA100D7CA90 /* SetStrokeSizeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeSizeCommand.h; sourceTree = "<group>"; };
+		FAB82C09261ADAA100D7CA90 /* SetStrokeSizeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeSizeCommand.m; sourceTree = "<group>"; };
+		FAB82C0E261ADAF700D7CA90 /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		FAB82C0F261ADAF700D7CA90 /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		FAB82C1E261AE89A00D7CA90 /* ScribbleThumbnailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailCell.h; sourceTree = "<group>"; };
+		FAB82C1F261AE89A00D7CA90 /* ScribbleThumbnailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +183,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA3ACA262619C8F500FAA0E8 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA272619C90800FAA0E8 /* Command.h */,
+				FA3ACA282619C90800FAA0E8 /* Command.m */,
+				FA3ACA302619CA4500FAA0E8 /* SaveScribbleCommand.h */,
+				FA3ACA312619CA4500FAA0E8 /* SaveScribbleCommand.m */,
+				FAB82BFC261AD9CF00D7CA90 /* DeleteScribbleCommand.h */,
+				FAB82BFD261AD9CF00D7CA90 /* DeleteScribbleCommand.m */,
+				FAB82C02261ADA1400D7CA90 /* OpenScribbleCommand.h */,
+				FAB82C03261ADA1400D7CA90 /* OpenScribbleCommand.m */,
+				FAB82C08261ADAA100D7CA90 /* SetStrokeSizeCommand.h */,
+				FAB82C09261ADAA100D7CA90 /* SetStrokeSizeCommand.m */,
+				FAB82C0E261ADAF700D7CA90 /* SetStrokeColorCommand.h */,
+				FAB82C0F261ADAF700D7CA90 /* SetStrokeColorCommand.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		FA3ACA362619D4E000FAA0E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA622619E70100FAA0E8 /* View2Image */,
+				FA3ACA612619E6FA00FAA0E8 /* Custom Stack */,
+				FA3ACA602619E6F100FAA0E8 /* Command Slider */,
+				FA3ACA562619E67100FAA0E8 /* Command Button */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FA3ACA372619DA4400FAA0E8 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA382619DA5C00FAA0E8 /* MarkVisitor.h */,
+				FA3ACA842619EA2800FAA0E8 /* MarkRenderer.h */,
+				FA3ACA852619EA2800FAA0E8 /* MarkRenderer.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		FA3ACA392619DA6800FAA0E8 /* Composite Prototype Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA3A2619DA7600FAA0E8 /* Mark.h */,
+				FA3ACA3B2619DA9000FAA0E8 /* Vertex.h */,
+				FA3ACA3C2619DA9000FAA0E8 /* Vertex.m */,
+				FA3ACA442619DAB700FAA0E8 /* Stroke.h */,
+				FA3ACA452619DAB700FAA0E8 /* Stroke.m */,
+				FA3ACA4A2619DAC700FAA0E8 /* Dot.h */,
+				FA3ACA4B2619DAC700FAA0E8 /* Dot.m */,
+				FA3ACA502619DAEE00FAA0E8 /* PrototypeViewController.h */,
+				FA3ACA512619DAEE00FAA0E8 /* PrototypeViewController.m */,
+			);
+			path = "Composite Prototype Iterator";
+			sourceTree = "<group>";
+		};
+		FA3ACA562619E67100FAA0E8 /* Command Button */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA572619E68900FAA0E8 /* CommandBarButton.h */,
+				FA3ACA582619E68900FAA0E8 /* CommandBarButton.m */,
+			);
+			path = "Command Button";
+			sourceTree = "<group>";
+		};
+		FA3ACA602619E6F100FAA0E8 /* Command Slider */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA742619E8AF00FAA0E8 /* CommandSlider.h */,
+				FA3ACA752619E8AF00FAA0E8 /* CommandSlider.m */,
+			);
+			path = "Command Slider";
+			sourceTree = "<group>";
+		};
+		FA3ACA612619E6FA00FAA0E8 /* Custom Stack */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA6E2619E86D00FAA0E8 /* NSMutableArray+Stack.h */,
+				FA3ACA6F2619E86D00FAA0E8 /* NSMutableArray+Stack.m */,
+			);
+			path = "Custom Stack";
+			sourceTree = "<group>";
+		};
+		FA3ACA622619E70100FAA0E8 /* View2Image */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA632619E71800FAA0E8 /* UIView+UIImage.h */,
+				FA3ACA642619E71800FAA0E8 /* UIView+UIImage.m */,
+			);
+			path = View2Image;
+			sourceTree = "<group>";
+		};
+		FA3ACA7A2619E90400FAA0E8 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA7B2619E91500FAA0E8 /* MarkEnumerator.h */,
+				FA3ACA7C2619E91500FAA0E8 /* MarkEnumerator.m */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		FA3ACA8C2619F3BE00FAA0E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACA8D2619F3CC00FAA0E8 /* CanvasView.h */,
+				FA3ACA8E2619F3CC00FAA0E8 /* CanvasView.m */,
+				FA3ACA962619F45E00FAA0E8 /* ClothCanvasView.h */,
+				FA3ACA972619F45E00FAA0E8 /* ClothCanvasView.m */,
+				FA3ACA9C2619F4A200FAA0E8 /* PaperCanvasView.h */,
+				FA3ACA9D2619F4A200FAA0E8 /* PaperCanvasView.m */,
+				FAB82BF6261AD1F600D7CA90 /* StockData.h */,
+				FAB82BF7261AD1F600D7CA90 /* StockData.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA3ACAA22619F4DD00FAA0E8 /* Memento Observer */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACAA42619F4FC00FAA0E8 /* ScribbleMemento.h */,
+				FA3ACAA52619F4FC00FAA0E8 /* ScribbleMemento.m */,
+				FA3ACAAA2619F69C00FAA0E8 /* Scribble.h */,
+				FA3ACAAB2619F69C00FAA0E8 /* Scribble.m */,
+				FA3ACAB02619FC0600FAA0E8 /* ScribbleManager.h */,
+				FA3ACAB12619FC0600FAA0E8 /* ScribbleManager.m */,
+			);
+			path = "Memento Observer";
+			sourceTree = "<group>";
+		};
+		FA3ACAA32619F4E500FAA0E8 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACAB62619FC4C00FAA0E8 /* ScribbleSource.h */,
+				FA3ACAB72619FC6900FAA0E8 /* ScribbleThumbnailView.h */,
+				FA3ACAB82619FC6900FAA0E8 /* ScribbleThumbnailView.m */,
+				FA3ACABD2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.h */,
+				FA3ACABE2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		FA3ACAC3261A015F00FAA0E8 /* Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				FA3ACAC4261A017000FAA0E8 /* CanvasViewGenerator.h */,
+				FA3ACAC5261A017000FAA0E8 /* CanvasViewGenerator.m */,
+				FA3ACACD261A01A200FAA0E8 /* PaperCanvasViewGenerator.h */,
+				FA3ACACE261A01A200FAA0E8 /* PaperCanvasViewGenerator.m */,
+				FA3ACAD3261A01E300FAA0E8 /* ClothCanvasViewGenerator.h */,
+				FA3ACAD4261A01E300FAA0E8 /* ClothCanvasViewGenerator.m */,
+			);
+			path = "Factory Method";
+			sourceTree = "<group>";
+		};
 		FA7AB6372618AC760097A1F2 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +360,17 @@
 		FA7AB6422618AC760097A1F2 /* TouchPainter */ = {
 			isa = PBXGroup;
 			children = (
+				FA3ACAC3261A015F00FAA0E8 /* Factory Method */,
+				FA3ACAA32619F4E500FAA0E8 /* Proxy */,
+				FA3ACAA22619F4DD00FAA0E8 /* Memento Observer */,
+				FA3ACA8C2619F3BE00FAA0E8 /* Views */,
+				FA3ACA7A2619E90400FAA0E8 /* Iterator */,
+				FA3ACA362619D4E000FAA0E8 /* Utilities */,
+				FA3ACA392619DA6800FAA0E8 /* Composite Prototype Iterator */,
+				FA3ACA372619DA4400FAA0E8 /* Visitor */,
+				FA3ACA262619C8F500FAA0E8 /* Command */,
+				FA7AB6822618AE790097A1F2 /* View Controllers */,
+				FA7AB67B2618AD150097A1F2 /* Mediator */,
 				FA7AB6432618AC760097A1F2 /* AppDelegate.h */,
 				FA7AB6442618AC760097A1F2 /* AppDelegate.m */,
 				FA7AB6462618AC760097A1F2 /* SceneDelegate.h */,
@@ -135,6 +402,62 @@
 				FA7AB66C2618AC7A0097A1F2 /* Info.plist */,
 			);
 			path = TouchPainterUITests;
+			sourceTree = "<group>";
+		};
+		FA7AB67B2618AD150097A1F2 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AB67C2618AD290097A1F2 /* CoordinatingController.h */,
+				FA7AB67D2618AD290097A1F2 /* CoordinatingController.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		FA7AB6822618AE790097A1F2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AB6852618AE950097A1F2 /* PaletteViewController */,
+				FA7AB6842618AE8D0097A1F2 /* ThumbnailViewController */,
+				FA7AB6832618AE850097A1F2 /* CanvasViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA7AB6832618AE850097A1F2 /* CanvasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AB6952618AECD0097A1F2 /* CanvasViewController.h */,
+				FA7AB6962618AECD0097A1F2 /* CanvasViewController.m */,
+			);
+			path = CanvasViewController;
+			sourceTree = "<group>";
+		};
+		FA7AB6842618AE8D0097A1F2 /* ThumbnailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAB82C14261AE22000D7CA90 /* Scribble Thumbnail Cell */,
+				FA7AB68F2618AEBD0097A1F2 /* ThumbnailViewController.h */,
+				FA7AB6902618AEBD0097A1F2 /* ThumbnailViewController.m */,
+			);
+			path = ThumbnailViewController;
+			sourceTree = "<group>";
+		};
+		FA7AB6852618AE950097A1F2 /* PaletteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AB6862618AEAD0097A1F2 /* PaletteViewController.h */,
+				FA7AB6872618AEAD0097A1F2 /* PaletteViewController.m */,
+			);
+			path = PaletteViewController;
+			sourceTree = "<group>";
+		};
+		FAB82C14261AE22000D7CA90 /* Scribble Thumbnail Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAB82C1E261AE89A00D7CA90 /* ScribbleThumbnailCell.h */,
+				FAB82C1F261AE89A00D7CA90 /* ScribbleThumbnailCell.m */,
+			);
+			path = "Scribble Thumbnail Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +589,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3ACA652619E71800FAA0E8 /* UIView+UIImage.m in Sources */,
+				FA7AB6882618AEAD0097A1F2 /* PaletteViewController.m in Sources */,
+				FA3ACAD5261A01E300FAA0E8 /* ClothCanvasViewGenerator.m in Sources */,
+				FA3ACA4C2619DAC700FAA0E8 /* Dot.m in Sources */,
+				FAB82BF8261AD1F600D7CA90 /* StockData.m in Sources */,
 				FA7AB64B2618AC760097A1F2 /* ViewController.m in Sources */,
+				FA3ACA522619DAEE00FAA0E8 /* PrototypeViewController.m in Sources */,
+				FA3ACAAC2619F69C00FAA0E8 /* Scribble.m in Sources */,
+				FA7AB67E2618AD290097A1F2 /* CoordinatingController.m in Sources */,
+				FAB82C0A261ADAA100D7CA90 /* SetStrokeSizeCommand.m in Sources */,
+				FAB82C20261AE89A00D7CA90 /* ScribbleThumbnailCell.m in Sources */,
 				FA7AB6452618AC760097A1F2 /* AppDelegate.m in Sources */,
+				FA3ACA322619CA4500FAA0E8 /* SaveScribbleCommand.m in Sources */,
+				FA3ACAB92619FC6900FAA0E8 /* ScribbleThumbnailView.m in Sources */,
+				FA7AB6972618AECD0097A1F2 /* CanvasViewController.m in Sources */,
+				FA3ACA9E2619F4A200FAA0E8 /* PaperCanvasView.m in Sources */,
+				FA3ACA702619E86D00FAA0E8 /* NSMutableArray+Stack.m in Sources */,
 				FA7AB6562618AC7A0097A1F2 /* main.m in Sources */,
+				FA3ACA8F2619F3CC00FAA0E8 /* CanvasView.m in Sources */,
+				FA3ACACF261A01A200FAA0E8 /* PaperCanvasViewGenerator.m in Sources */,
+				FA3ACA3D2619DA9000FAA0E8 /* Vertex.m in Sources */,
+				FA3ACA592619E68900FAA0E8 /* CommandBarButton.m in Sources */,
+				FA7AB6912618AEBD0097A1F2 /* ThumbnailViewController.m in Sources */,
+				FA3ACABF2619FCAC00FAA0E8 /* ScribbleThumbnailViewImageProxy.m in Sources */,
+				FA3ACA7D2619E91500FAA0E8 /* MarkEnumerator.m in Sources */,
+				FAB82C10261ADAF700D7CA90 /* SetStrokeColorCommand.m in Sources */,
+				FA3ACA862619EA2800FAA0E8 /* MarkRenderer.m in Sources */,
+				FA3ACAC6261A017000FAA0E8 /* CanvasViewGenerator.m in Sources */,
+				FAB82C04261ADA1400D7CA90 /* OpenScribbleCommand.m in Sources */,
+				FA3ACA762619E8AF00FAA0E8 /* CommandSlider.m in Sources */,
+				FA3ACA292619C90800FAA0E8 /* Command.m in Sources */,
+				FA3ACAB22619FC0600FAA0E8 /* ScribbleManager.m in Sources */,
+				FA3ACA982619F45E00FAA0E8 /* ClothCanvasView.m in Sources */,
 				FA7AB6482618AC760097A1F2 /* SceneDelegate.m in Sources */,
+				FAB82BFE261AD9CF00D7CA90 /* DeleteScribbleCommand.m in Sources */,
+				FA3ACA462619DAB700FAA0E8 /* Stroke.m in Sources */,
+				FA3ACAA62619F4FC00FAA0E8 /* ScribbleMemento.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

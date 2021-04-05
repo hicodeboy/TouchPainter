@@ -1,24 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uem-kp-tJv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fJp-wG-sa0">
+            <objects>
+                <navigationController id="Uem-kp-tJv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QRx-Cw-vtt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ALj-2B-cmi" kind="relationship" relationship="rootViewController" id="mQx-6k-LFn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cV7-2a-pFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="487"/>
+        </scene>
+        <!--Canvas View Controller-->
+        <scene sceneID="tn9-u8-hJ5">
+            <objects>
+                <viewController id="ALj-2B-cmi" customClass="CanvasViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9PB-QG-32L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Can" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-6i-ezN">
+                                <rect key="frame" x="186" y="329" width="31" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4PI-9i-eKV">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="04u-SH-8ms"/>
+                                    <barButtonItem tag="1" title="Item" image="trash" catalog="system" id="rBZ-a8-RsP" userLabel="Trash" customClass="CommandBarButton">
+                                        <connections>
+                                            <action selector="toolBarAction:" destination="ALj-2B-cmi" id="Gze-Ax-ps0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="De9-dp-0ow"/>
+                                    <barButtonItem tag="2" title="Item" image="square.and.arrow.down" catalog="system" id="oCb-yN-oGI" userLabel="Command Bar Button" customClass="CommandBarButton">
+                                        <connections>
+                                            <action selector="toolBarAction:" destination="ALj-2B-cmi" id="KkT-Xa-MhB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="COc-ti-IIq"/>
+                                    <barButtonItem tag="3" title="Item" image="square.and.arrow.up" catalog="system" id="DEh-fW-r3Y" userLabel="Bar Button Item">
+                                        <connections>
+                                            <segue destination="z8N-F6-SH4" kind="show" id="Y0q-s4-5bW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZrL-aN-QF4"/>
+                                    <barButtonItem tag="4" title="Item" image="paintpalette" catalog="system" id="ukr-tF-GAA">
+                                        <connections>
+                                            <segue destination="c6W-cK-Xsh" kind="show" id="D9v-09-7ha"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Mxd-iA-8Gb"/>
+                                    <barButtonItem tag="5" title="Item" image="arrowshape.turn.up.left" catalog="system" id="Yk8-JU-9jS">
+                                        <connections>
+                                            <action selector="toolBarAction:" destination="ALj-2B-cmi" id="DdW-24-PXp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aJC-bs-a77"/>
+                                    <barButtonItem tag="6" title="Item" image="arrowshape.turn.up.right" catalog="system" id="9jc-tz-Qgg">
+                                        <connections>
+                                            <action selector="toolBarAction:" destination="ALj-2B-cmi" id="xAW-Hq-Pxn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rDJ-L5-fwr"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZMP-xU-fTk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="76T-Ot-gXB"/>
+                    <connections>
+                        <outlet property="saveBar" destination="oCb-yN-oGI" id="nsS-Td-8gG"/>
+                        <outlet property="trashBar" destination="rBZ-a8-RsP" id="vbY-Ag-a7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKh-GJ-fcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="487"/>
+        </scene>
+        <!--Palette View Controller-->
+        <scene sceneID="X1I-vq-q7I">
+            <objects>
+                <viewController storyboardIdentifier="PaletteViewController" id="c6W-cK-Xsh" customClass="PaletteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nLY-A2-94Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ah-A9-T2B">
+                                <rect key="frame" x="183.5" y="138" width="47" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C10-EA-KrX">
+                                <rect key="frame" x="47" y="208" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-P6-Byq">
+                                <rect key="frame" x="47" y="249" width="13" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qS-JB-BLq">
+                                <rect key="frame" x="47" y="288" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ihx-hj-kFx" customClass="CommandSlider">
+                                <rect key="frame" x="89" y="204" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCommandSliderValueChanged:" destination="c6W-cK-Xsh" eventType="valueChanged" id="Qcz-F9-6Om"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kYq-yB-wQ5" customClass="CommandSlider">
+                                <rect key="frame" x="89" y="245" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCommandSliderValueChanged:" destination="c6W-cK-Xsh" eventType="valueChanged" id="f3L-yV-KVe"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-Wf-XbI" customClass="CommandSlider">
+                                <rect key="frame" x="89" y="282" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCommandSliderValueChanged:" destination="c6W-cK-Xsh" eventType="valueChanged" id="yNR-Il-TRt"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2C-ht-THo">
+                                <rect key="frame" x="87" y="397" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="large_dot" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-Qg-4pz">
+                                <rect key="frame" x="331" y="618" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small_dot" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-Ey-puW">
+                                <rect key="frame" x="34" y="618" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-A2-e2h" customClass="CommandSlider">
+                                <rect key="frame" x="85" y="618" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCommandSliderValueChanged:" destination="c6W-cK-Xsh" eventType="valueChanged" id="FeM-GV-gzt"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i6n-7C-g4P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1ah-A9-T2B" firstAttribute="top" secondItem="i6n-7C-g4P" secondAttribute="top" constant="50" id="dzF-Yf-Kfa"/>
+                            <constraint firstItem="1ah-A9-T2B" firstAttribute="centerX" secondItem="nLY-A2-94Z" secondAttribute="centerX" id="nTx-Ph-ajx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q1H-Mr-uLN"/>
+                    <connections>
+                        <outlet property="blueSlider" destination="Tc4-Wf-XbI" id="Ufh-6K-0Ps"/>
+                        <outlet property="greenSlider" destination="kYq-yB-wQ5" id="auq-am-nkd"/>
+                        <outlet property="paletteView" destination="g2C-ht-THo" id="yho-6X-2De"/>
+                        <outlet property="redSlider" destination="ihx-hj-kFx" id="kiK-yh-0wl"/>
+                        <outlet property="sizeSlider" destination="gOY-A2-e2h" id="I0n-8I-iZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZ7-3s-Zg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089.8550724637685" y="1161.8303571428571"/>
+        </scene>
+        <!--Thumbnail View Controller-->
+        <scene sceneID="xhx-MS-J8j">
+            <objects>
+                <viewController storyboardIdentifier="ThumbnailViewController" id="z8N-F6-SH4" customClass="ThumbnailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGq-er-ZUP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1YT-Pf-5zA">
+                                <rect key="frame" x="0.0" y="59" width="414" height="778"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z8N-F6-SH4" id="l8K-Bx-VyV"/>
+                                    <outlet property="delegate" destination="z8N-F6-SH4" id="hY3-MS-Cgf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VKm-wK-D0T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nqe-J6-dQE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFj-o1-8N0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2493" y="472"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="large_dot" width="95" height="100"/>
+        <image name="paintpalette" catalog="system" width="128" height="105"/>
+        <image name="small_dot" width="62" height="58"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
