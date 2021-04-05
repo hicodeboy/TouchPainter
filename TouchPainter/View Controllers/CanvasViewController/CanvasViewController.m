@@ -94,11 +94,11 @@
 - (void) onBarButtonHit:(id)sender {
     UIBarButtonItem *barButton = sender;
     
-    if ([barButton tag] == 4)
+    if ([barButton tag] == 5)
     {
       [self.undoManager undo];
     }
-    else if ([barButton tag] == 5)
+    else if ([barButton tag] == 6)
     {
       [self.undoManager redo];
     }
@@ -182,18 +182,18 @@
     [newStroke setColor:_strokeColor];
     [newStroke setSize:_strokeSize];
     
-    //[scribble_ addMark:newStroke shouldAddToPreviousMark:NO];
+//    [_scribble addMark:newStroke shouldAddToPreviousMark:NO];
     
     // retrieve a new NSInvocation for drawing and
     // set new arguments for the draw command
     NSInvocation *drawInvocation = [self drawScribbleInvocation];
     [drawInvocation setArgument:&newStroke atIndex:2];
-    
+
     // retrieve a new NSInvocation for undrawing and
     // set a new argument for the undraw command
     NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
     [undrawInvocation setArgument:&newStroke atIndex:2];
-    
+
     // execute the draw command with the undraw command
     [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
   }
@@ -224,7 +224,7 @@
     [singleDot setColor:_strokeColor];
     [singleDot setSize:_strokeSize];
 
-    //[scribble_ addMark:singleDot shouldAddToPreviousMark:NO];
+//    [_scribble addMark:singleDot shouldAddToPreviousMark:NO];
 
     // retrieve a new NSInvocation for drawing and
     // set new arguments for the draw command
@@ -268,13 +268,9 @@
       [keyPath isEqualToString:@"mark"])
   {
     id <Mark> mark = [change objectForKey:NSKeyValueChangeNewKey];
-//      if (![mark isEqual:[NSNull null]]) {
       [_canvasView setMark:mark];
-//          [_canvasView setMark:[(Scribble *)object newMark]];
-          [_canvasView setNeedsDisplay];
-//      }
-    
-    
+
+      [_canvasView setNeedsDisplay];
   }
 }
 
