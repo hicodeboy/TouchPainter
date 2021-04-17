@@ -6,7 +6,7 @@
 //
 
 #import "Stroke.h"
-
+#import "MarkEnumerator.h"
 @interface Stroke()
 @property (nonatomic, strong) NSMutableArray *children;
 
@@ -125,7 +125,7 @@
   {
     self.color = [coder decodeObjectForKey:@"StrokeColor"] ;
     self.size = [coder decodeFloatForKey:@"StrokeSize"];
-    _children = [coder decodeObjectForKey:@"StrokeChildren"];
+    self.children = [coder decodeObjectForKey:@"StrokeChildren"];
   }
   return self;
 }
@@ -140,10 +140,43 @@
 #pragma mark -
 #pragma mark enumerator methods
 
-//- (NSEnumerator *) enumerator
-//{
-//  return [[MarkEnumerator alloc] initWithMark:self];
-//}
+- (NSEnumerator *) enumerator
+{
+  return [[MarkEnumerator alloc] initWithMark:self];
+}
 
+
+- (void) enumerateMarksUsingBlock:(void (^)(id <Mark> item, BOOL *stop)) block
+{
+  BOOL stop = NO;
+  
+  NSEnumerator *enumerator = [self enumerator];
+  
+  for (id <Mark> mark in enumerator)
+  {
+    block (mark, &stop);
+    if (stop)
+      break;
+  }
+}
+
+#pragma mark -
+#pragma mark An Extended Direct-draw Example
+
+// for a direct draw example
+- (void) drawWithContext:(CGContextRef)context
+{
+  CGContextMoveToPoint(context, self.location.x, self.location.y);
+  
+  for (id <Mark> mark in _children)
+  {
+    [mark drawWithContext:context];
+  }
+  
+  CGContextSetLineWidth(context, self.size);
+  CGContextSetLineCap(context, kCGLineCapRound);
+  CGContextSetStrokeColorWithColor(context,[self.color CGColor]);
+  CGContextStrokePath(context);
+}
 
 @end
