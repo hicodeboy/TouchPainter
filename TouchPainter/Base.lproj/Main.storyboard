@@ -81,13 +81,30 @@
                     </view>
                     <navigationItem key="navigationItem" id="76T-Ot-gXB"/>
                     <connections>
+                        <outlet property="redoBar" destination="9jc-tz-Qgg" id="guu-iI-Udl"/>
                         <outlet property="saveBar" destination="oCb-yN-oGI" id="nsS-Td-8gG"/>
                         <outlet property="trashBar" destination="rBZ-a8-RsP" id="vbY-Ag-a7L"/>
+                        <outlet property="undoBar" destination="Yk8-JU-9jS" id="kFp-s6-7ru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKh-GJ-fcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1184" y="487"/>
+        </scene>
+        <!--Prototype View Controller-->
+        <scene sceneID="pWY-Ym-698">
+            <objects>
+                <viewController id="4YK-4u-yQY" customClass="PrototypeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HR6-Ld-WDa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rHm-BL-Far"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBY-5b-Ogt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="1349"/>
         </scene>
         <!--Palette View Controller-->
         <scene sceneID="X1I-vq-q7I">

@@ -60,7 +60,7 @@ typedef enum
             
             // set the activeViewController to
             // paletteViewController
-//            _activeViewController = controller;
+            _activeViewController = controller;
           }
             break;
           case kButtonTagOpenThumbnailView:
@@ -91,9 +91,7 @@ typedef enum
     } // every thing else goes to the main canvasViewController
     else
     {
-        [_canvasViewController dismissViewControllerAnimated:YES completion:^{
-            
-        }];
+        [self.canvasViewController.navigationController popViewControllerAnimated:true];
       
       // set the activeViewController back to
       // canvasViewController

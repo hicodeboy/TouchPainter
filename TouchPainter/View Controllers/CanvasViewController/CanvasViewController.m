@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet CommandBarButton *trashBar;
 
 @property (weak, nonatomic) IBOutlet CommandBarButton *saveBar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *undoBar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *redoBar;
 
 @end
 
@@ -54,6 +56,10 @@
                                          green:greenValue
                                           blue:blueValue
                                          alpha:1.0]];
+    
+    _undoBar.enabled = self.undoManager.canUndo;
+    _redoBar.enabled = self.undoManager.canRedo;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -126,6 +132,8 @@
                    options:NSKeyValueObservingOptionInitial |
                            NSKeyValueObservingOptionNew
                    context:nil];
+      _undoBar.enabled = self.undoManager.canUndo;
+      _redoBar.enabled = self.undoManager.canRedo;
       
   }
 }
@@ -238,7 +246,11 @@
 
     // execute the draw command with the undraw command
     [self executeInvocation:drawInvocation withUndoInvocation:undrawInvocation];
+      
   }
+    
+    _undoBar.enabled = self.undoManager.canUndo;
+    _redoBar.enabled = self.undoManager.canRedo;
 
   // reset the start point here
   _startPoint = CGPointZero;
@@ -320,6 +332,8 @@
    withRedoInvocation:invocation];
   
   [invocation invoke];
+    _undoBar.enabled = self.undoManager.canUndo;
+    _redoBar.enabled = self.undoManager.canRedo;
 }
 
 - (void) unexecuteInvocation:(NSInvocation *)invocation
@@ -330,5 +344,7 @@
    withUndoInvocation:invocation];
   
   [invocation invoke];
+    _undoBar.enabled = self.undoManager.canUndo;
+    _redoBar.enabled = self.undoManager.canRedo;
 }
 @end

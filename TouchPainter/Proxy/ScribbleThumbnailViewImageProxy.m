@@ -51,7 +51,7 @@
   {
     // Drawing code
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+
     // draw a placeholder frame
     // with a 10-user-space-unit-long painted
     // segment and a 3-user-space-unit-long
