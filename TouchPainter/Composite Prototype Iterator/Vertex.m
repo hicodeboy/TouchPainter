@@ -38,7 +38,7 @@
 // it needs to be implemented for memento
 - (id)copyWithZone:(NSZone *)zone
 {
-  Vertex *vertexCopy = [[[self class] allocWithZone:zone] initWithLocation:_location];
+    Vertex *vertexCopy = [[Vertex allocWithZone:zone] initWithLocation:self.location];
   
   return vertexCopy;
 }

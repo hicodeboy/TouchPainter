@@ -20,7 +20,7 @@
 // it needs to be implemented for memento
 - (id)copyWithZone:(NSZone *)zone
 {
-  Dot *dotCopy = [[[self class] allocWithZone:zone] initWithLocation:self.location];
+  Dot *dotCopy = [[Dot allocWithZone:zone] initWithLocation:self.location];
   
   // copy the color
   [dotCopy setColor:[UIColor colorWithCGColor:[self.color CGColor]]];

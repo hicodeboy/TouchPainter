@@ -25,7 +25,7 @@
     //2.添加按钮动作
         //2.1 确认按钮
         UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            UIImage *canvasViewImage = [[canvasViewController canvasView] image];
+            UIImage *canvasViewImage = [[canvasViewController canvasView] getImage];//[[canvasViewController canvasView] image];
             Scribble *scribble = [canvasViewController scribble];
             
             // use an instance of ScribbleManager

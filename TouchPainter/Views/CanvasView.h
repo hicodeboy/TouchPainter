@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CanvasView : UIView
 @property (nonatomic, weak) id <Mark> mark;
+
+- (UIImage *)getImage;
 @end
 
 NS_ASSUME_NONNULL_END
